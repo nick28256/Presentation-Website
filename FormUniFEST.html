@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscriere UniFEST 2024</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <a href="UniFEST.html">ACASĂ</a>
+            <a href="FormUniFEST.html">FORMULAR ÎNSCRIERE</a>
+            <li>
+                <a href="#">CONTACT</a>
+                <ul class="dropdown">
+                    <li><a href="https://uniunea-studentilor.ro/">USR</a></li>
+                    <li><a href="mailto:asfeaa.ucv@gmail.com">MAIL</a></li>
+                    <li><p>0752541805</p></li>
+                </ul>
+                </li>
+        </div>
+        <hr>
+    </header>
+    <main>
+
+    <div class="wrapper">
+        <form action="formhandler.php" method="post">
+            <h1>Activități UniFEST</h1>
+            <div class="input-box">
+                <label>Numele tău de familie:</label><br>
+                <input type="text" name="lname" placeholder="Nume" required>
+                <i class='bx bxs-user-pin' ></i>
+            </div>
+            <div class="input-box">
+                <label>Prenumele tău:</label><br>
+                <input type="text" name="fname" placeholder="Prenume" required>
+                <i class='bx bx-user-pin' ></i>
+            </div>
+            <div class="input-box">
+                <label>Adresa de mail:</label><br>
+                <input type="email" name="email" placeholder="Email" required>
+                <i class='bx bxs-envelope' ></i>
+            </div>
+            <div class="input-box">
+                <label>Numărul tău de telefon:</label><br>
+                <input type="text" name="number" placeholder="Număr de telefon" required>
+                <i class='bx bx-phone-call' ></i>
+            </div>
+            <div class="radiobtn1">
+                <label>Ești student?</label><br>
+                <input type="radio" id="yn1da" name="yn1" value="da">
+                <label for="yn1da">Da</label><br>
+                <input type="radio" id="yn1nu" name="yn1" value="nu">
+                <label for="yn1nu">Nu</label><br>
+            </div>
+            <div class="input-box">
+                <label>La ce facultate studiezi?</label><br>
+                <input type="text" name="facultate" placeholder="Facultatea" required>
+                <i class='bx bxs-bank'></i>
+            </div>
+            <div class="radiobtn2">
+                <label>Faci parte dintr-o asociație studențească?</label><br>
+                <input type="radio" id="yn2da" name="yn2" value="da">
+                <label for="yn2da">Da</label><br>
+                <input type="radio" id="yn2nu" name="yn2" value="nu">
+                <label for="yn2nu">Nu</label><br>
+            </div>
+            <div class="input-box">
+                <label for="idk">Din ce asociație studențească faci parte?</label><br>
+                <input type="text" id="idk" name="asociatie" placeholder="Asociația" required>
+                <i class='bx bx-party' ></i>
+            </div>
+            <button type="submit" class="btn">Trimite</button>
+        </form>
+
+    </div>
+    </main>
+
+    <footer>
+        <hr>
+        <div class="footer-content">
+        ȘERBAN NICOLAE - ANUL 3<br>
+       &copy; copyright reserved
+        <a href="https://asfeaa.ro/">ASFEAA</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

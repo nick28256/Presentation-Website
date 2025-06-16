@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniFEST</title>
+    <link rel="stylesheet" href="CSS/stylePage.css">
+    <script src="animation.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <button onclick="toggleMusic()">Off</button>
+            <a href="UniFEST.html">ACASĂ</a>
+            <a href="FormUniFEST.html">FORMULAR ÎNSCRIERE</a>
+            <li>
+            <a href="#">CONTACT</a>
+            <ul class="dropdown">
+                <li><a href="https://uniunea-studentilor.ro/">USR</a></li>
+                <li><a href="mailto:asfeaa.ucv@gmail.com">MAIL</a></li>
+                <li><p>0752541805</p></li>
+            </ul>
+            </li>
+        </div>
+        <hr>
+    </header>
+
+    
+
+    <audio id="BackgroundMusic" autoplay loop>
+        <source src="CSS/Phoenix - In umbra marelui URSS.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        <p>Background music is playing</p>
+    </audio>
+
+    <h1 id="fest-title">UniFEST 2024</h1>
+
+    <div class="wrapper">
+        
+        <div class="text">
+            <h2>We're back again</h2>
+            <p>Cel mai mare festival studențesc a ajuns, din nou, și în Craiova, iar anul acesta are loc de pe 8 noiembrie până pe 18 noiembrie</p>
+            <p>După cum v-am obișnuit, și după cum puteți vedea în programul din dreapta, și anul acesta v-am pregătit o multitudine de activități geniale și GRATIS la care te asteptăm cu brațele deschise</p>
+        </div>
+        
+        <div class="program">
+            <img src="CSS/unifest-program1.jpg" alt="program" usemap="#harta"><br>
+            <map name="harta">
+                <area target="_self" href="harta.html" coords="615,909,13,912,12,12,611,17" shape="poly" alt="harta" title="Harta festivalului" onmouseover="this.style.cursor='pointer'">
+            </map>
+        </div>
+
+    </div> <br>
+
+    <h3 class="more-text">Mai jos regăsești câteva poze din edițiile trecute ale festivalului</h3><br><br>
+
+    <div class="galerie">
+        <img src="CSS/unifest1.jpg" alt="picture">
+        <img src="CSS/unifest3.jpg" alt="picture">
+        <img src="CSS/unifest-map.jpg" alt="picture">
+    </div><br>
+
+    <div class="btn">
+        <a href="FormUniFEST.html"><button type="button" class="formular">Înscrie-te</button></a>
+    </div>
+
+    <footer>
+        <hr>
+        <div class="footer-content">
+        ȘERBAN NICOLAE - ANUL 3<br>
+       &copy; copyright reserved
+        <a href="https://asfeaa.ro/">ASFEAA</a>
+        </div>
+    </footer>
+
+    <script>
+        const music = document.getElementById('BackgroundMusic');
+        const button = document.querySelector('button');
+        let playing = true;
+    
+        function toggleMusic() {
+          if (playing) {
+            music.pause();
+            button.textContent = "On";
+          } else {
+            music.play();
+            button.textContent = "Off";
+          }
+          playing = !playing;
+        }
+      </script>
+
+</body>
+</html>

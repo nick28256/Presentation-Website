@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniFEST</title>
+
+    <style>
+
+        @font-face {
+        font-family: Play;
+        src: url(CSS/PlaywriteGBS-VariableFont_wght.ttf);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Play;
+        }
+
+        body{
+            background: url(CSS/unifest20.jpg);
+            background-size: 100%;
+            background-position: center;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+    width: 100vw;
+    padding: 20px 20px;
+    padding-bottom: 0;
+    background-color: #051a3b00;
+    backdrop-filter: blur(20px);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+header hr {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+a{
+    text-decoration: none;
+    color: #ccc;
+}
+
+li{
+    display: inline-block;
+    position: relative;
+}
+
+ul li a{
+    display: block;
+    padding: 20px 25px;
+    text-decoration: none;
+}
+
+ul li p{
+    color: white;
+}
+
+li ul.dropdown li {
+    display: block;
+}
+
+li ul.dropdown {
+    width: 120%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+li a:hover{
+    background: #6b97f4d1;
+    backdrop-filter: blur(10px);
+}
+
+li:hover ul.dropdown {
+    display: block;
+}
+
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 1;
+            width: 540px;
+            height: 250px;
+            background: transparent;
+            border: 3px solid rgba(0, 0, 0, .2);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+            border-radius: 20px;
+            padding: 20px 40px;
+           
+        }
+        .box h2{
+            position: absolute;
+            margin-top: -25%;
+            font-size: 35px;
+            color: #9fd9f6e9;
+        }
+        .box .back{
+            width: 120%;
+            height: 55px;
+            transform: translateX(-10%);
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: 0.5s ease-out;
+            margin-bottom: 0%;
+            margin-top: 65px;
+        }
+        
+        .box .back:hover{
+            width: 125%;
+            height: 65px;
+            font-size: 18px;
+            transition: 0.5s ease;
+            background-color: rgba(127, 178, 255, 0.952);
+            border: rgb(0, 0, 0) 3px solid;
+        }
+
+        footer {
+    width: 100vw;
+    padding: 10px 20px;
+    padding-top: 0;
+    background-color: #051a3b00;
+    backdrop-filter: blur(20px);
+}
+
+.footer-content {
+    color: #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer hr {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <a href="UniFEST.html">ACASĂ</a>
+            <a href="FormUniFEST.html">FORMULAR ÎNSCRIERE</a>
+            <li>
+                <a href="#">CONTACT</a>
+                <ul class="dropdown">
+                    <li><a href="https://uniunea-studentilor.ro/">USR</a></li>
+                    <li><a href="mailto:asfeaa.ucv@gmail.com">MAIL</a></li>
+                    <li><p>0752541805</p></li>
+                </ul>
+                </li>
+        </div>
+        <hr>
+    </header>
+
+    <main>
+
+    <div class="box">
+        <h2>Ne vedem la UniFEST!</h2><br>
+        <a href="UniFEST.html"><button type="button" class="back">Mergi la pagina principală</button></a>
+    </div>
+
+    </main>
+
+    <footer>
+        <hr>
+        <div class="footer-content">
+        ȘERBAN NICOLAE - ANUL 3<br>
+       &copy; copyright reserved
+        <a href="https://asfeaa.ro/">ASFEAA</a>
+        </div>
+    </footer>
+    
+</body>
+</html>
